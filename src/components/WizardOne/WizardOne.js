@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {connect } from 'react-redux';
-import { updateLoanType, updatePropertyType } from '/src/ducks/reducer';
+import { updateLoanType, updatePropertyType } from '../../ducks/reducer';
 
 class WizardOne extends Component {
     render(){
@@ -21,7 +21,7 @@ class WizardOne extends Component {
 
                     <p>What type of property are you purchasing?</p> <br />
 
-                    <select onChange={(e) => updateProprtyType(e.target.value)}>
+                    <select onChange={(e) => updatePropertyType(e.target.value)}>
 
                         <option value="Single Family Home">Single Family Home</option>
                         <option value="Town Home">Townhome</option>
@@ -38,7 +38,7 @@ class WizardOne extends Component {
     }
 }
 
-mapStateToProps(state){
+function mapStateToProps(state) {
     const {loanType, propertyType} = state;
     return {
         loanType,
