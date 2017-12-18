@@ -27,4 +27,4 @@ function mapStateToProps (state){
     }
 }
 
-export default connect(mapStateToProps, {city})(WizardTwo);
+export default connect(mapStateToProps, {updateCity})(WizardTwo);
