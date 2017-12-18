@@ -29,4 +29,4 @@ function mapStateToProps(state){
     }
 }
 
-export default connact(mapStateToProps, {updateHistory})(WizardEight);
+export default connect(mapStateToProps, {updateHistory})(WizardEight);
