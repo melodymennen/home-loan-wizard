@@ -6,6 +6,7 @@ import {updateCost, updateDownPayment} from '../../ducks/reducer';
 class WizardSix extends Component {
 
     render(){
+        const {updateCost, updateDownPayment} = this.props;
         return(
             <div className="parent-div">
                     <div className="vert-align">                    <p>What is the estimated purchase price?</p> <br />

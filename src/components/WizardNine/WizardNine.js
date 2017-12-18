@@ -12,9 +12,9 @@ class WizardNine extends Component {
                     
                     <p>What is your address?</p> <br />
 
-                    <input type="text" placeholder="Line One" onChange={(e) => updateAddressOne(e.target.value)}/>
-                    <input type="text" placeholder="Line Two" onChange={(e) => updateAddressTwo(e.target.value)}/>
-                    <input type="text" placeholder="Line Three" onChange={(e) => updateAddressThree(e.target.value)}/>
+                    <input type="text" placeholder="Line One" onChange={(e) => this.props.updateAddressOne(e.target.value)}/>
+                    <input type="text" placeholder="Line Two" onChange={(e) => this.props.updateAddressTwo(e.target.value)}/>
+                    <input type="text" placeholder="Line Three" onChange={(e) => this.props.updateAddressThree(e.target.value)}/>
                 
                     
                     <Link to="/wTen"><button className="margin-btn"> Next </button></Link>

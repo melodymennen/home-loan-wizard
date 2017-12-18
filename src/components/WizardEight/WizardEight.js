@@ -11,10 +11,10 @@ class WizardEight extends Component {
                     <div className="vert-align">                    
                         <p>Have you had a bankruptcy or foreclosure in the past seven years? </p><br />
                     <div className="row">
-                        <Link to="/wNine"><button value="Has never been in bankruptcy" onClick={(e) => updateHistory(e.target.value)}>No</button></Link>
-                        <Link to="/wNine"><button value="Has had bankruptcy before" onClick={(e) => updateHistory(e.target.value)}>Bankruptcy</button></Link>
-                        <Link to="/wNine"><button value="Has had a foreclosure before" onClick={(e) => updateHistory(e.target.value)}>Foreclosure</button></Link>
-                        <Link to="/wNine"><button value="Has had both a foreclosure and a bankruptcy" onClick={(e) => updateHistory(e.target.value)}>Both</button></Link>
+                        <Link to="/wNine"><button value="Has never been in bankruptcy" onClick={(e) => this.props.updateHistory(e.target.value)}>No</button></Link>
+                        <Link to="/wNine"><button value="Has had bankruptcy before" onClick={(e) => this.props.updateHistory(e.target.value)}>Bankruptcy</button></Link>
+                        <Link to="/wNine"><button value="Has had a foreclosure before" onClick={(e) => this.props.updateHistory(e.target.value)}>Foreclosure</button></Link>
+                        <Link to="/wNine"><button value="Has had both a foreclosure and a bankruptcy" onClick={(e) => this.props.updateHistory(e.target.value)}>Both</button></Link>
                     </div>
                 </div>
             </div>

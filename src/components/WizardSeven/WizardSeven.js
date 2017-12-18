@@ -6,6 +6,7 @@ import updateCredit from '../../ducks/reducer';
 class WizardSeven extends Component {
 
     render(){
+        const {updateCredit} = this.props;
         return(
             <div className="parent-div">
                 <div className="vert-align">                    
